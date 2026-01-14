@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    border-bottom: 4px solid #0a3d91;
+}
+
+.top-header img {
+    height: 65px;
+    margin-right: 20px;
+}
+
+.top-header h1 {
+    font-size: 22px;
+    color: #0a3d91;
+}
+
+.top-header p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0a3d91;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding-left: 40px;
+}
+
+.navbar li {
+    margin-right: 25px;
+}
+
+.navbar a {
+    display: block;
+    padding: 14px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #0a3d91;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Input */
+.result-box {
+    display: flex;
+    gap: 15px;
+}
+
+.result-box input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.result-box button {
+    background: #0a3d91;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result-box button:hover {
+    background: #072c6a;
+}
+
+/* Error */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Result */
+.result-display {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+.pass {
+    color: green;
+    font-weight: bold;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #777;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    background: #0a3d91;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}

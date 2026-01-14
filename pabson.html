@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PABSON | Pre-Qualifying Examination Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pabson.css">
+</head>
+<body>
+
+<header class="top-header">
+    <img src="pabson.webp" alt="PABSON Logo">
+    <div>
+        <h1>Private and Boarding Schools' Organization Nepal</h1>
+        <p>Pre-Qualifying Examination Result Portal</p>
+    </div>
+</header>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="https://pabson.org.np/" target="_blank">Home</a></li>
+        <li><a href="https://pabson.org.np/about-us/" target="_blank">About Us</a></li>
+        <li><a href="https://pabson.org.np/notices/" target="_blank">Notices</a></li>
+        <li><a href="https://pabson.org.np/publications/" target="_blank">Publications</a></li>
+        <li><a href="https://pabson.org.np/contact-us/" target="_blank">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <h2>Pre-Qualifying Examination Result</h2>
+    <p class="subtitle">Enter your Symbol Number to view the result</p>
+
+    <div class="result-box">
+        <input type="text" id="symbolNumber" placeholder="Enter Symbol Number">
+        <button onclick="getResult()">View Result</button>
+    </div>
+
+    <div id="error" class="error hidden">Invalid Symbol Number</div>
+
+    <div id="result" class="result-display hidden">
+        <h3>Examination Result</h3>
+        <table>
+            <tr>
+                <th>Symbol Number</th>
+                <td id="resSymbol"></td>
+            </tr>
+            <tr>
+                <th>Result Status</th>
+                <td class="pass">QUALIFIED</td>
+            </tr>
+            <tr>
+                <th>GPA (Unweighted)</th>
+                <td id="resGPA"></td>
+            </tr>
+        </table>
+
+        <p class="note">
+            This result is provisional. Final verification will be conducted by PABSON.
+        </p>
+    </div>
+</main>
+
+<footer>
+    © 2026 Private and Boarding Schools' Organization Nepal (PABSON)
+</footer>
+
+<script src="pabson.js"></script>
+</body>
+</html>
